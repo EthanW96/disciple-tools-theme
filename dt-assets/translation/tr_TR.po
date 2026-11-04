@@ -1080,7 +1080,7 @@ msgstr "Sorumlu olduğun yerler"
 #: dt-assets/functions/enqueue-scripts.php:299 dt-groups/base-setup.php:1259
 #: dt-metrics/records/genmap.php:166
 msgid "Add"
-msgstr "Adres"
+msgstr "Ekle"
 
 #: dt-assets/functions/enqueue-scripts.php:301
 #: dt-reports/magic-url-setup.php:758 template-settings.php:347
@@ -3688,7 +3688,7 @@ msgstr "Grubun lideri"
 
 #: dt-groups/base-setup.php:450
 msgid "Coach of Group"
-msgstr "Grubun Koçluk Yapan"
+msgstr "Koçluk Yaptığı Gruplar"
 
 #: dt-groups/base-setup.php:506
 msgid "Create"
@@ -3764,7 +3764,7 @@ msgstr "Nesil haritası yüklenemedi."
 
 #: dt-groups/base-setup.php:1255
 msgid "No child groups to display."
-msgstr "Görüntülenecek çocuk grubu yok."
+msgstr "Görüntülenecek alt grup yok."
 
 #: dt-groups/base-setup.php:1258 dt-metrics/records/genmap.php:165
 msgid "Open"
@@ -3800,11 +3800,11 @@ msgstr "Kapat"
 
 #: dt-groups/base-setup.php:1269 dt-metrics/records/genmap.php:171
 msgid "Add Child To"
-msgstr "Çocuğu Şuraya Ekle"
+msgstr "Alt Grup Ekle:"
 
 #: dt-groups/base-setup.php:1271 dt-metrics/records/genmap.php:173
 msgid "Add Child"
-msgstr "Çocuk Ekle"
+msgstr "Alt Grup Ekle"
 
 #: dt-groups/base-setup.php:1272
 msgid "Name is required"
