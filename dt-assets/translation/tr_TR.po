@@ -1618,7 +1618,7 @@ msgstr ""
 #: dt-assets/parts/modals/modal-help.php:66 dt-posts/custom-post-type.php:247
 #: dt-posts/posts.php:566 dt-posts/posts.php:576 dt-users/users.php:169
 msgid "Locations"
-msgstr "Konum"
+msgstr "Konum(lar)"
 
 #: dt-assets/parts/modals/modal-help.php:67
 msgctxt "Optional Documentation"
@@ -2816,7 +2816,7 @@ msgstr "En Son"
 
 #: dt-contacts/module-access.php:1104
 msgid "Location"
-msgstr "Konum"
+msgstr "Konum(lar)"
 
 #: dt-contacts/module-access.php:1105
 msgid "Assign"
@@ -3464,7 +3464,7 @@ msgstr "Grup vaftiz ediyor."
 
 #: dt-groups/base-setup.php:203
 msgid "Bible Study"
-msgstr "Rabbin Sözü"
+msgstr "İncil Çalışması"
 
 #: dt-groups/base-setup.php:204
 msgctxt "Optional Documentation"
@@ -3525,9 +3525,9 @@ msgctxt "Optional Documentation"
 msgid "The group is sharing the gospel."
 msgstr "Bu grubu müjde paylaşıyorlar."
 
-#: dt-groups/base-setup.php:300
+#: dt-groups/base-setup.php:238 dt-groups/base-setup.php:300
 msgid "Leaders"
-msgstr "Sorumlusu"
+msgstr "Liderler"
 
 #: dt-groups/base-setup.php:239
 msgctxt "Optional Documentation"
@@ -6469,8 +6469,3 @@ msgstr "Yinelenenler bulundu:"
 
 #~ msgid "Unshare with selected user"
 #~ msgstr "Seçili kullanıcıyla paylaşımı kaldır"
-
-#: dt-groups/base-setup.php:246
-msgctxt "Church Health practice"
-msgid "Leaders"
-msgstr "Önderlik"

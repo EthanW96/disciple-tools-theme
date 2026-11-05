@@ -189,14 +189,6 @@ class DT_Groups_Base extends DT_Module_Base {
 
 
 
-            // The "Leaders" practice shares its English word with the Leaders field, but some
-            // languages name them differently; fall back to the shared translation when a
-            // language has no translation for the practice yet.
-            $leaders_practice_label = _x( 'Leaders', 'Church Health practice', 'disciple_tools' );
-            if ( $leaders_practice_label === 'Leaders' ) {
-                $leaders_practice_label = __( 'Leaders', 'disciple_tools' );
-            }
-
             $fields['health_metrics'] = [
                 'name' => __( 'Church Health', 'disciple_tools' ),
                 'description' => _x( 'Track the progress and health of a group/church.', 'Optional Documentation', 'disciple_tools' ),
@@ -243,7 +235,7 @@ class DT_Groups_Base extends DT_Module_Base {
                         'icon' => get_template_directory_uri() . '/dt-assets/images/groups/evangelism-2.svg'
                     ],
                     'church_leaders' => [
-                        'label' => $leaders_practice_label,
+                        'label' => __( 'Leaders', 'disciple_tools' ),
                         'description' => _x( 'The group has leaders.', 'Optional Documentation', 'disciple_tools' ),
                         'icon' => get_template_directory_uri() . '/dt-assets/images/groups/leadership-2.svg'
                     ],
