@@ -14,19 +14,21 @@ class DT_Posts_Hooks {
      * if they are available
      *
      * @param $fields
+     * @param bool $is_options true when $fields is a key_select/multi_select field's options
      * @return mixed
      */
-    public static function dt_get_custom_fields_translation( $fields ) {
+    public static function dt_get_custom_fields_translation( $fields, $is_options = false ) {
         if ( is_admin() ) {
             return $fields;
         } else {
             $user_locale = get_user_locale();
             foreach ( $fields as $field => $value ) {
                 if ( isset( $value['type'] ) && ( $value['type'] == 'key_select' || $value['type'] == 'multi_select' ) ) {
-                    $fields[$field]['default'] = self::dt_get_custom_fields_translation( $value['default'] );
+                    $fields[$field]['default'] = self::dt_get_custom_fields_translation( $value['default'], true );
                 }
                 if ( !empty( $value['translations'][$user_locale] ) ) {
-                    if ( !isset( $fields['type'] ) ){
+                    // Options are shown by their label, fields by their name.
+                    if ( $is_options ){
                         $fields[$field]['label'] = $value['translations'][$user_locale];
                     } else {
                         $fields[$field]['name'] = $value['translations'][$user_locale];
